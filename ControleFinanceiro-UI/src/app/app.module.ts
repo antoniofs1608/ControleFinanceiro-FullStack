@@ -32,6 +32,10 @@ import { NovoGanhoComponent } from './components/Ganho/novo-ganho/novo-ganho.com
 import { AtualizarUsuarioComponent } from './components/Usuario/atualizar-usuario/atualizar-usuario.component';
 import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/login-usuario.component';
 import { RegistrarUsuarioComponent } from './components/Usuario/Registro/registrar-usuario/registrar-usuario.component';
+import { CartoesService } from './services/cartoes.service';
+import { FuncoesService } from './services/funcoes.service';
+import { UsuariosService } from './services/usuarios.service';
+import { AuthGuardService } from './services/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,11 @@ import { RegistrarUsuarioComponent } from './components/Usuario/Registro/registr
   providers: [
     TiposService, 
     CategoriasService,
-    HttpClientModule
+    FuncoesService,
+    HttpClientModule, 
+    UsuariosService,
+    CartoesService, 
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })
