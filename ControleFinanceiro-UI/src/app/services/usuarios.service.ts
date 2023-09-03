@@ -5,7 +5,6 @@ import { DadosRegistro } from './../models/DadosRegistro';
 import { DadosLogin } from '../models/DadosLogin';
 import { AtualizarUsuario } from '../models/AtualizarUsuario';
 
-
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
