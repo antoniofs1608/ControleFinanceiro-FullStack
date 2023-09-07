@@ -40,8 +40,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
+//import { MatDialogActions} from '@angular/material/dialog';
+//import { ChartsModule  } from 'ng2-charts';
 
-import { ListagemFuncoesComponent } from './components/Funcao/listagem-funcoes/listagem-funcoes.component';
+import { ListagemFuncoesComponent, DialogExclusaoFuncoesComponent } from './components/Funcao/listagem-funcoes/listagem-funcoes.component';
 import { NovaFuncaoComponent } from './components/Funcao/nova-funcao/nova-funcao.component';
 import { AtualizarFuncaoComponent } from './components/Funcao/atualizar-funcao/atualizar-funcao.component';
 import { RegistrarUsuarioComponent } from './components/Usuario/Registro/registrar-usuario/registrar-usuario.component';
@@ -49,19 +51,16 @@ import { LoginUsuarioComponent } from './components/Usuario/Login/login-usuario/
 import { DashboardComponent } from './components/Dashboard/dashboard/dashboard.component';
 import { HeaderComponent } from './components/Dashboard/header/header.component';
 import { NovoCartaoComponent } from './components/Cartao/novo-cartao/novo-cartao.component';
-import { ListagemCartoesComponent  } from './components/Cartao/listagem-cartoes/listagem-cartoes.component';
+import { ListagemCartoesComponent, DialogExclusaoCartoesComponent  } from './components/Cartao/listagem-cartoes/listagem-cartoes.component';
 import { AtualizarCartaoComponent } from './components/Cartao/atualizar-cartao/atualizar-cartao.component';
 import { IndexComponent } from './components/Dashboard/index/index.component';
 import { AtualizarDespesaComponent } from './components/Despesa/atualizar-despesa/atualizar-despesa.component';
-import { ListagemDespesasComponent } from './components/Despesa/listagem-despesas/listagem-despesas.component';
+import { ListagemDespesasComponent, DialogExclusaoDespesasComponent } from './components/Despesa/listagem-despesas/listagem-despesas.component';
 import { NovaDespesaComponent } from './components/Despesa/nova-despesa/nova-despesa.component';
 import { AtualizarGanhoComponent } from './components/Ganho/atualizar-ganho/atualizar-ganho.component';
-import { ListagemGanhosComponent } from './components/Ganho/listagem-ganhos/listagem-ganhos.component';
+import { ListagemGanhosComponent, DialogExclusaoGanhosComponent } from './components/Ganho/listagem-ganhos/listagem-ganhos.component';
 import { NovoGanhoComponent } from './components/Ganho/novo-ganho/novo-ganho.component';
 import { AtualizarUsuarioComponent } from './components/Usuario/atualizar-usuario/atualizar-usuario.component';
-
-
-
 
 @NgModule({
   declarations: [
@@ -73,6 +72,7 @@ import { AtualizarUsuarioComponent } from './components/Usuario/atualizar-usuari
     ListagemFuncoesComponent,
     NovaFuncaoComponent,
     AtualizarFuncaoComponent,
+    DialogExclusaoFuncoesComponent,
     RegistrarUsuarioComponent,
     LoginUsuarioComponent,
     DashboardComponent,
@@ -80,11 +80,14 @@ import { AtualizarUsuarioComponent } from './components/Usuario/atualizar-usuari
     NovoCartaoComponent,
     ListagemCartoesComponent,
     AtualizarCartaoComponent,
+    DialogExclusaoCartoesComponent,
     NovaDespesaComponent,
     ListagemDespesasComponent,
+    DialogExclusaoDespesasComponent,
     AtualizarDespesaComponent,
     NovoGanhoComponent,
     ListagemGanhosComponent,
+    DialogExclusaoGanhosComponent,
     AtualizarGanhoComponent,
     AtualizarUsuarioComponent,
     IndexComponent,
